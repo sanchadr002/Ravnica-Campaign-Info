@@ -8,6 +8,14 @@ function App() {
   return (
     <Fragment>
       <Navbar />
+      <Routes>
+        <Route 
+          path='/'
+          element={
+            <Home />
+          }
+        />
+      </Routes>
     </Fragment>
   );
 }
