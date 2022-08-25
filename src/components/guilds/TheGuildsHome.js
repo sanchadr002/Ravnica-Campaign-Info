@@ -52,12 +52,35 @@ const TheGuildsHome = () => {
     const accordionData = [
         {
             title: 'Azorius Senate',
-            content: `The Azorius Senate champions its extensive legal code as the barrier between society and chaos. It currently has no formal guildmaster, as its last was assassinated prior to the events of War of the Spark. Plans for an election have been made, but exhaustive beauracracy slows its happening.\n 
-            The Senate is supported by three branches (refered to as "columns"), each led by an arbiter, who in turn is a part of the "Triumvirate", which advises the guildmaster. The three columns are as follows: the Sova Column, a body acting as a judicial branch; the Jelenn Column, a body acting as a legislative branch; and the Lyev Column, the executive branch which acts as a police force.`
+            content: `The Azorius Senate champions its extensive legal code as the barrier between society and 
+            chaos. It currently has no formal guildmaster, as its last was assassinated prior to the events of 
+            War of the Spark.\n 
+            The Senate is supported by three branches (refered to as "columns"), each led by an arbiter, who in 
+            turn is a part of the "Triumvirate", which advises the guildmaster. The three columns are as 
+            follows: the Sova Column, a body acting as a judicial branch; the Jelenn Column, a body acting as a 
+            legislative branch; and the Lyev Column, the executive branch which acts as a police force.`
         },
         {
             title: 'Boros Legion',
-            content: `The Boros Legion combines the forces of law and military strength to forge Ravnica into a safe and just society for all. Its current guildmaster is the angel Aurelia.\n The Legion has a rigid hierarchy, at the top of which sit many angels. These celestial beings act mostly as holy warriors and advisors in leadership roles. For its military force, the guildmaster has Commanders, who wield larger units each led by Captains. These Captains lead smaller garrisons. Even further within this hierarchy are groups of soldiers who specialize in certain forms of battle, known as Skyknights, Wojeks, Sunhome Guards, and Firefists.`
+            content: `The Boros Legion combines the forces of law and military strength to forge Ravnica into a 
+            safe and just society for all. Its current guildmaster is the angel Aurelia.\n The Legion has a 
+            rigid hierarchy, at the top of which sit many angels. These celestial beings act mostly as holy 
+            warriors and advisors in leadership roles. For its military force, the guildmaster has Commanders, 
+            who wield larger units each led by Captains. These Captains lead smaller garrisons. Even further 
+            within this hierarchy are groups of soldiers who specialize in certain forms of battle, known as 
+            Skyknights, Wojeks, Sunhome Guards, and Firefists.`
+        },
+        {
+            title: 'House Dimir',
+            content: `House Dimir is the most secretive out of all the guilds. Its mere existence is doubted by 
+            the populace at large. The guild masquerades as respectable messengers and reporters, while in 
+            truth being an association acting as a network of spies and assassins. Its first guildmaster was 
+            the vampire Szadek, who ruled the guild for 10,000 years until he was arrested and killed in the 
+            turmoil of the Decamillennial Celebration. House Dimir does not have official ranks, with competence and information in the guild instead being rewarded with missions of increasing importance. Its current guildmaster, Lazav, considers those with who've gathered considerable amounts of secrets to be worthy of acting as counsel.`
+        },
+        {
+            title: 'Golgari Swarm',
+            content: `The Golgari Swarm acts as Ravnica's `
         }
     ]
 
