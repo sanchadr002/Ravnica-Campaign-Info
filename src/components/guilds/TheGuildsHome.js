@@ -53,8 +53,8 @@ const TheGuildsHome = () => {
         {
             title: 'Azorius Senate',
             content: `The Azorius Senate champions its extensive legal code as the barrier between society and 
-            chaos. It currently has no formal guildmaster, as its last was assassinated prior to the events of 
-            War of the Spark.\n 
+            chaos. It currently has no formal guildmaster, as its last, Isperia, was assassinated prior to the 
+            events of War of the Spark.\n 
             The Senate is supported by three branches (refered to as "columns"), each led by an arbiter, who in 
             turn is a part of the "Triumvirate", which advises the guildmaster. The three columns are as 
             follows: the Sova Column, a body acting as a judicial branch; the Jelenn Column, a body acting as a 
@@ -80,7 +80,7 @@ const TheGuildsHome = () => {
         },
         {
             title: 'Golgari Swarm',
-            content: `The Golgari Swarm acts as Ravnica's `
+            content: `The Golgari Swarm acts as Ravnica's waste management system. It celebrates the vibrancy of life, but gives an equal amount of attention to nature's facets of rot, death, and destruction. Vraska, the Swarm's current guildmaster, is a reclusive gorgon who has recently returned after a decades' long absence. Progressing up the ranks does not quite exist among the Golgari. Your renown within the guild is essentially a direct measure of the guildmasters' knowledge of you, her confidence in your abilities, and her interest in your activities.`
         }
     ]
 
