@@ -89,6 +89,13 @@ const TheGuildsHome = () => {
         {
             title: 'Izzet League',
             content: `The Izzet League exists as both a scientific institution, and Ravnica's infrastructure management system. The League prioritizes discovery and experimentation, with many of its members having shorter attention spans. Its current guildmaster, Ral Zarek, leads the guild after a brief decades-long absence nearly a century ago. Ranks within the league are determined by quality of results, with higher renown rewarded with more access to teams of researchers and resources.`
+        },
+        {
+            title: 'Orzhov Syndicate',
+            content: `To the Orzhov Syndicate, wealth is power. The guild wields money, debt, and faith to 
+            operate as a crime family while maintaing the facade of a religious institution. The Orzhov value 
+            structure, and so, they have a rigid hierarchy. All members start at the bottom, with renown 
+            requiring devotion and debt collecting.`
         }
     ]
 
