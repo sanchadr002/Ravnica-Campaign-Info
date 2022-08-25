@@ -30,7 +30,7 @@ const Header = styled.h2({
 
 const Container = styled.div({
     background: 'darkslategray',
-    height: '50rem',
+    height: '90vh',
     display: 'flex-box'
 })
 
