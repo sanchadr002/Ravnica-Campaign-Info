@@ -81,6 +81,10 @@ const TheGuildsHome = () => {
         {
             title: 'Golgari Swarm',
             content: `The Golgari Swarm acts as Ravnica's waste management system. It celebrates the vibrancy of life, but gives an equal amount of attention to nature's facets of rot, death, and destruction. Vraska, the Swarm's current guildmaster, is a reclusive gorgon who has recently returned after a decades' long absence. Progressing up the ranks does not quite exist among the Golgari. Your renown within the guild is essentially a direct measure of the guildmasters' knowledge of you, her confidence in your abilities, and her interest in your activities.`
+        },
+        {
+            title: 'Gruul Clans',
+            content: `The Gruul Clans are a disparate collection of groups who inhabit the wild areas of Ravnica, well as abandoned zones and ruins. They see civilization as a source of weakness, and work towards tearing it down to restore the true order of nature. The guildmaster of the Clans is the cyclops Barzygmas, who seized the position by beating out all other competitors after the guild's last leader was killed during the events of the War of the Spark.`
         }
     ]
 
