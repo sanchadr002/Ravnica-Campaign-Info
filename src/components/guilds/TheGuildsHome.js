@@ -84,7 +84,11 @@ const TheGuildsHome = () => {
         },
         {
             title: 'Gruul Clans',
-            content: `The Gruul Clans are a disparate collection of groups who inhabit the wild areas of Ravnica, well as abandoned zones and ruins. They see civilization as a source of weakness, and work towards tearing it down to restore the true order of nature. The guildmaster of the Clans is the cyclops Barzygmas, who seized the position by beating out all other competitors after the guild's last leader was killed during the events of the War of the Spark.`
+            content: `The Gruul Clans are a disparate collection of groups who inhabit the wild areas of Ravnica, well as abandoned zones and ruins. They see civilization as a source of weakness, and work towards tearing it down to restore the true order of nature. The guildmaster of the Clans is the cyclops Barzygmas, who seized the position by beating out all other competitors after the guild's last leader was killed during the events of the War of the Spark. Ranks do not formally exist among the Gruul. Renown within the Clans could also be called glory -- strength and power in battle is rewarded with the respect of your peers, and the acceptance of your leadership.`
+        },
+        {
+            title: 'Izzet League',
+            content: `The Izzet League exists as both a scientific institution, and Ravnica's infrastructure management system. The League prioritizes discovery and experimentation, with many of its members having shorter attention spans. Its current guildmaster, Ral Zarek, leads the guild after a brief decades-long absence nearly a century ago. Ranks within the league are determined by quality of results, with higher renown rewarded with more access to teams of researchers and resources.`
         }
     ]
 
