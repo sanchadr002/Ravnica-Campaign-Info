@@ -33,7 +33,7 @@ const Paragraph = styled.p({
     padding: '1em',
     background: 'darkslategray',
     color: 'honeydew',
-    // textAlign: 'left',
+    textAlign: 'left',
     fontSize: '1.5em'
 })
 
@@ -54,7 +54,7 @@ const TheGuildsHome = () => {
             title: 'Azorius Senate',
             content: `The Azorius Senate champions its extensive legal code as the barrier between society and 
             chaos. It currently has no formal guildmaster, as its last, Isperia, was assassinated prior to the 
-            events of War of the Spark.\n 
+            events of War of the Spark.
             The Senate is supported by three branches (refered to as "columns"), each led by an arbiter, who in 
             turn is a part of the "Triumvirate", which advises the guildmaster. The three columns are as 
             follows: the Sova Column, a body acting as a judicial branch; the Jelenn Column, a body acting as a 
@@ -63,7 +63,7 @@ const TheGuildsHome = () => {
         {
             title: 'Boros Legion',
             content: `The Boros Legion combines the forces of law and military strength to forge Ravnica into a 
-            safe and just society for all. Its current guildmaster is the angel Aurelia.\n The Legion has a 
+            safe and just society for all. Its current guildmaster is the angel Aurelia. The Legion has a 
             rigid hierarchy, at the top of which sit many angels. These celestial beings act mostly as holy 
             warriors and advisors in leadership roles. For its military force, the guildmaster has Commanders, 
             who wield larger units each led by Captains. These Captains lead smaller garrisons. Even further 
@@ -76,39 +76,72 @@ const TheGuildsHome = () => {
             the populace at large. The guild masquerades as respectable messengers and reporters, while in 
             truth being an association acting as a network of spies and assassins. Its first guildmaster was 
             the vampire Szadek, who ruled the guild for 10,000 years until he was arrested and killed in the 
-            turmoil of the Decamillennial Celebration. House Dimir does not have official ranks, with competence and information in the guild instead being rewarded with missions of increasing importance. Its current guildmaster, Lazav, considers those with who've gathered considerable amounts of secrets to be worthy of acting as counsel.`
+            turmoil of the Decamillennial Celebration. House Dimir does not have official ranks, with 
+            competence and information in the guild instead being rewarded with missions of increasing 
+            importance. Its current guildmaster, Lazav, considers those with who've gathered considerable 
+            amounts of secrets to be worthy of acting as counsel.`
         },
         {
             title: 'Golgari Swarm',
-            content: `The Golgari Swarm acts as Ravnica's waste management system. It celebrates the vibrancy of life, but gives an equal amount of attention to nature's facets of rot, death, and destruction. Vraska, the Swarm's current guildmaster, is a reclusive gorgon who has recently returned after a decades' long absence. Progressing up the ranks does not quite exist among the Golgari. Your renown within the guild is essentially a direct measure of the guildmasters' knowledge of you, her confidence in your abilities, and her interest in your activities.`
+            content: `The Golgari Swarm acts as Ravnica's waste management system. It celebrates the vibrancy 
+            of life, but gives an equal amount of attention to nature's facets of rot, death, and destruction. 
+            Vraska, the Swarm's current guildmaster, is a reclusive gorgon who has recently returned after a 
+            decades' long absence. Progressing up the ranks does not quite exist among the Golgari. Your renown 
+            within the guild is essentially a direct measure of the guildmasters' knowledge of you, her 
+            confidence in your abilities, and her interest in your activities.`
         },
         {
             title: 'Gruul Clans',
-            content: `The Gruul Clans are a disparate collection of groups who inhabit the wild areas of Ravnica, well as abandoned zones and ruins. They see civilization as a source of weakness, and work towards tearing it down to restore the true order of nature. The guildmaster of the Clans is the cyclops Barzygmas, who seized the position by beating out all other competitors after the guild's last leader was killed during the events of the War of the Spark. Ranks do not formally exist among the Gruul. Renown within the Clans could also be called glory -- strength and power in battle is rewarded with the respect of your peers, and the acceptance of your leadership.`
+            content: `The Gruul Clans are a disparate collection of groups who inhabit the wild areas of 
+            Ravnica, well as abandoned zones and ruins. They see civilization as a source of weakness, and work 
+            towards tearing it down to restore the true order of nature. The guildmaster of the Clans is the 
+            cyclops Barzygmas, who seized the position by beating out all other competitors after the guild's 
+            last leader was killed during the events of the War of the Spark. Ranks do not formally exist among 
+            the Gruul. Renown within the Clans could also be called glory -- strength and power in battle is 
+            rewarded with the respect of your peers, and the acceptance of your leadership.`
         },
         {
             title: 'Izzet League',
-            content: `The Izzet League exists as both a scientific institution, and Ravnica's infrastructure management system. The League prioritizes discovery and experimentation, with many of its members having shorter attention spans. Its current guildmaster, Ral Zarek, leads the guild after a brief decades-long absence nearly a century ago. Ranks within the league are determined by quality of results, with higher renown rewarded with more access to teams of researchers and resources.`
+            content: `The Izzet League exists as both a scientific institution, and Ravnica's infrastructure 
+            management system. The League prioritizes discovery and experimentation, with many of its research 
+            projects leading to some kind of public chaos. Its current guildmaster, Ral Zarek, leads the guild 
+            after a brief decades-long absence nearly a century ago. Ranks within the league are determined by 
+            quality of results, with higher renown rewarded with more access to teams of researchers and
+            resources.`
         },
         {
             title: 'Orzhov Syndicate',
             content: `To the Orzhov Syndicate, wealth is power. The guild wields money, debt, and faith to 
             operate as a crime family while maintaing the facade of a religious institution. The acting 
             guildmaster is Tomik Vrona, a lawmage of notable repute. The Orzhov value 
-            structure, and so, they have a rigid hierarchy. All members start at the bottom, with renown 
-            requiring devotion and debt collecting.`
+            structure, and see the afterlife as an opportunity for debtors to continue paying off their death. 
+            All members start at the bottom, with renown requiring devotion and debt collecting.`
         },
         {
             title: 'Cult of Rakdos',
-            content: `The Cult of Rakdos values entertainment and comedy, and sees the 'promise of tomorrow' to be the most hilarious thing of all. Members of the Cult of Rakdos often work in entertainment in Ravnica, ranging from relaxed bars and lounges, to more 'killer' clubs. Its first and current guildmaster is the demon Rakdos, and cultists live to entertain him. Rank and renown within the guild is directly tied to what Rakdos thinks of your performances.`
+            content: `The Cult of Rakdos values entertainment and comedy, and sees the 'promise of tomorrow' to 
+            be the most hilarious joke of all. Members of the Cult of Rakdos often work in entertainment in 
+            Ravnica, ranging from relaxed bars and lounges, to more 'killer' clubs. Its first and current 
+            guildmaster is the demon Rakdos, and cultists live to entertain him. Rank and renown within the 
+            guild is directly tied to what Rakdos thinks of your performances.`
         },
         {
             title: 'Selesnya Conclave',
-            content: `The Selesnya Conclave originally existed to act as an institution of conservation and charity, but pushes towards expansion of its community to embrace all of Ravnica within its peaceful union. The guild holds the union of nature and civilization in the highest regards. Its current guildmaster, Trostani, is a fusion of three dryads, and are said to represent the will of the Worldsoul. Rank does not exist among the Selesnya, and members are encouraged to pursue what makes them happy and unique in the world, as long as it benefits the community as a whole.`
+            content: `The Selesnya Conclave originally existed to act as an institution of conservation and 
+            charity, but pushes towards expansion of its community to embrace all of Ravnica within its 
+            peaceful union. The guild holds the union of nature and civilization in the highest regards. Its 
+            current guildmaster, Trostani, is a fusion of three dryads, and are said to represent the will of 
+            the Worldsoul. Rank does not exist among the Selesnya, and members are encouraged to pursue what 
+            makes them happy and unique in the world, as long as it benefits the community as a whole.`
         },
         {
             title: 'Simic Combine',
-            content: `The Simic Combine discovers the secrets of life within its often-underweater laboratories. While the Combine does work in matters of medicine and public health, its real efforts life in biological experimentation to adapt nature and civilization to one another. Its current guildmaster, Vannifar, believes that the Combine's philosophy should move towards perfecting nature. Rank and renown among the Simic Combine are determined by functionality. Greater competence is rewarded with greater responsibility on research projects.`
+            content: `The Simic Combine discovers the secrets of life within its often-underweater 
+            laboratories. While the Combine does work in matters of medicine and public health, its real 
+            efforts life in biological experimentation to adapt nature and civilization to one another. Its 
+            current guildmaster, Vannifar, believes that the Combine's philosophy should move towards 
+            perfecting nature. Rank and renown among the Simic Combine are determined by functionality. Greater 
+            competence is rewarded with greater responsibility on research projects.`
         }
     ]
 
@@ -127,13 +160,11 @@ const TheGuildsHome = () => {
                     While the leaders of guilds may speak of guild dominance and use sabotage, subterfuge, and violence for their ends, most guild members still have friends, family, and other loved ones in guilds that are not their own. Guild differences can be a basis for interactions with others, but they don't have to be the default for all of them.
                 </Paragraph>
                 <Paragraph>
-                    Refer to the section below for more detailed information on each guild.
+                    Refer to the section below for more information on each guild.
                 </Paragraph>
-                <Paragraph>
                     {accordionData.map(({ title, content }) => (
                         <Accordion title={title} content={content}/>
                     ))}
-                </Paragraph>
             </Container>
         </Wrapper>
     )

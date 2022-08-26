@@ -70,7 +70,7 @@ const Home = () => {
                     As you approach the bridge, you spot the familiar cloaked white masks. Even after all this time, the sight of even your own mask makes your heart skip. What would your guild do if they knew one of their own is a member of the infamous Order? The thought has passed through your head countless times, but the time to turn back is long gone.
                 </Paragraph>
                 <Paragraph>
-                    Balance is your goal now. Balance is how this world you call 'home' can exist. Balance is what you fight for. Another mission begins ..."
+                    Balance is what allows Ravnica to exist as the world it is, and it's what you're fighting to protect. Another mission begins ..."
                 </Paragraph>
                 <Paragraph>
                     <small>
