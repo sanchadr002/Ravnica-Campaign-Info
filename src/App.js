@@ -4,6 +4,7 @@ import Home from './components/Home'
 import Navbar from './components/navigation/Navbar';
 import TheGuildsHome from './components/guilds/TheGuildsHome';
 import CampaignConceptHome from './components/campaign_concept/CampaignConceptHome';
+import CharacterCreationHome from './components/character_creation/CharacterCreationHome';
 
 function App() {
   return (
@@ -26,6 +27,12 @@ function App() {
           path='/campaign'
           element={
             <CampaignConceptHome />
+          }
+        />
+        <Route 
+          path='/character'
+          element={
+            <CharacterCreationHome />
           }
         />
       </Routes>

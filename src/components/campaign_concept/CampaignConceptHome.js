@@ -72,7 +72,9 @@ const CampaignConceptHome = () => {
                         <Paragraph>
                             The group is less than a hundred years old, with its formation coming about shortly 
                             before the discovery of mysterious 'demi-planes', from which massive amounts of 
-                            energy and other resources can be drawn.
+                            energy and other resources can be drawn. Its recruitment process consists of 
+                            scouting for potential members, and inviting them into the Order upon confirmation 
+                            of sufficient competence.
                         </Paragraph>
                     <Header>Recent History</Header>
                         <Paragraph>
