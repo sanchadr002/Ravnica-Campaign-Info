@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './components/Home'
 import Navbar from './components/navigation/Navbar';
 import TheGuildsHome from './components/guilds/TheGuildsHome';
+import CampaignConceptHome from './components/campaign_concept/CampaignConceptHome';
 
 function App() {
   return (
@@ -19,6 +20,12 @@ function App() {
           path='/guilds'
           element={
             <TheGuildsHome />
+          }
+        />
+        <Route 
+          path='/campaign'
+          element={
+            <CampaignConceptHome />
           }
         />
       </Routes>
