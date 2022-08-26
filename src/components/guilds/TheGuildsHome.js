@@ -101,6 +101,10 @@ const TheGuildsHome = () => {
         {
             title: 'Cult of Rakdos',
             content: `The Cult of Rakdos values entertainment and comedy, and sees the 'promise of tomorrow' to be the most hilarious thing of all. Members of the Cult of Rakdos often work in entertainment in Ravnica, ranging from relaxed bars and lounges, to more 'killer' clubs. Its first and current guildmaster is the demon Rakdos, and cultists live to entertain him. Rank and renown within the guild is directly tied to what Rakdos thinks of your performances.`
+        },
+        {
+            title: 'Selesnya Conclave',
+            content: `The Selesnya Conclave originally existed to act as an institution of conservation and charity, but pushes towards expansion of its community to embrace all of Ravnica within its peaceful union. The guild holds the union of nature and civilization in the highest regards. Its current guildmaster, Trostani, is a fusion of three dryads, and are said to represent the will of the Worldsoul. Rank does not exist among the Selesnya, and members are encouraged to pursue what makes them happy and unique in the world, as long as it benefits the community as a whole.`
         }
     ]
 
