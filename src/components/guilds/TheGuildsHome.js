@@ -93,9 +93,14 @@ const TheGuildsHome = () => {
         {
             title: 'Orzhov Syndicate',
             content: `To the Orzhov Syndicate, wealth is power. The guild wields money, debt, and faith to 
-            operate as a crime family while maintaing the facade of a religious institution. The Orzhov value 
+            operate as a crime family while maintaing the facade of a religious institution. The acting 
+            guildmaster is Tomik Vrona, a lawmage of notable repute. The Orzhov value 
             structure, and so, they have a rigid hierarchy. All members start at the bottom, with renown 
             requiring devotion and debt collecting.`
+        },
+        {
+            title: 'Cult of Rakdos',
+            content: `The Cult of Rakdos values entertainment and comedy, and sees the 'promise of tomorrow' to be the most hilarious thing of all. Members of the Cult of Rakdos often work in entertainment in Ravnica, ranging from relaxed bars and lounges, to more 'killer' clubs. Its first and current guildmaster is the demon Rakdos, and cultists live to entertain him. Rank and renown within the guild is directly tied to what Rakdos thinks of your performances.`
         }
     ]
 
