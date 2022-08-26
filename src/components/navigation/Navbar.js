@@ -19,7 +19,7 @@ const Navbar = () => {
     return (
         <Wrapper>
             <NavItem>
-                <Link to="/">Home</Link>
+                <Link to="/Ravnica-Campaign-Info">Home</Link>
             </NavItem>
             <NavItem>
                 <Link to="/guilds">The Guilds</Link>
