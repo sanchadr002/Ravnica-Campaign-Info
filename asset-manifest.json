@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Ravnica-Campaign-Info/static/css/main.ede59290.css",
+    "main.js": "/Ravnica-Campaign-Info/static/js/main.f86a24f4.js",
+    "static/js/787.e5c42396.chunk.js": "/Ravnica-Campaign-Info/static/js/787.e5c42396.chunk.js",
+    "index.html": "/Ravnica-Campaign-Info/index.html",
+    "main.ede59290.css.map": "/Ravnica-Campaign-Info/static/css/main.ede59290.css.map",
+    "main.f86a24f4.js.map": "/Ravnica-Campaign-Info/static/js/main.f86a24f4.js.map",
+    "787.e5c42396.chunk.js.map": "/Ravnica-Campaign-Info/static/js/787.e5c42396.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ede59290.css",
+    "static/js/main.f86a24f4.js"
+  ]
+}
