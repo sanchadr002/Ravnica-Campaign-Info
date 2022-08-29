@@ -3,6 +3,7 @@ import CardArt from '../shared/CardArt'
 import { scryfallIDSearch } from '../../api/scryfall_search'
 import styled from 'styled-components'
 import Accordion from '../shared/Accordion'
+import AccordionItem from 'react-bootstrap/esm/AccordionItem'
 
 const Title = styled.h1({
     fontSize: '3em',
@@ -56,43 +57,80 @@ const Paragraph = styled.p({
 const accordionData = [
     {
         title: 'General Points',
-        content: `The general requirements for a player character in this campaign are: some 
-        event in your character's past that's caused them to fight for balance among the guilds (maybe your 
-        character saw their guild do something that changed how they saw the guild/guild system); 
-         a pre-level 3 feat, representing an exceptional ability that would catch the Order's eye (think 
-        about how this has aided your character in their life in getting to where they are now, either as a 
-        guild member or member of the Order); a guild that your character is a member of (I 
-        figure people will naturally want to choose different guilds from each other but don't be afraid to 
-        choose a guild that's already represented in the party! Each guild has a variety of roles and 
-        archetypes within its ranks); three contacts generated from your guild's background in 
-        the Ravnica sourcebook (you can flesh these out more yourself or let me do it! and I figure they will 
-        be important for both mission purposes and non-Order-related exploration); one 
-        non-contact NPC that is important to your character in some way; and an archetype chosen from below on 
-        this page. Aside from that, your character's race and class can be anything from the 
-        sourcebooks. There's also a fair amount of room for backstory, as your characters 
-        should have an established life in both Ravnica and in their guild.`
+        content:
+            <AccordionItemText>
+                The general requirements for a player character in this campaign are: 
+                <br/><br/>
+                    <ul>
+                        <li>
+                            some event in your character's past that's caused them to fight for balance among 
+                            the guilds (maybe your character saw their guild do something that changed how they 
+                            saw the guild/guild system);
+                        </li>
+                        <br/>
+                        <li>
+                            a pre-level 3 feat, representing an exceptional ability that would catch the 
+                            Order's eye (think about how this has aided your character in their life in getting 
+                            to where they are now, either as a guild member or member of the Order);
+                        </li>
+                        <br/>
+                        <li>
+                            a guild that your character is a member of (I figure people will naturally want to 
+                            choose different guilds from each other but don't be afraid to choose a guild 
+                            that's already represented in the party! Each guild has a variety of roles and 
+                            archetypes within its ranks); 
+                        </li>
+                        <br/>
+                        <li>
+                            three contacts generated from your guild's background in the Ravnica sourcebook 
+                            (you can flesh these out more yourself or let me do it! and I figure they will be 
+                            important for both mission purposes and non-Order-related exploration);
+                        </li>
+                        <br/>
+                        <li>
+                            one non-contact NPC that is important to your character in some way; 
+                        </li>
+                        <br/>
+                        <li>
+                            and an archetype chosen from below on this page. 
+                        </li>
+                    </ul>
+                    <br/>
+                Aside from that, your character's race and class can be anything from the 
+                sourcebooks. There's also a fair amount of room for backstory, as your characters 
+                should have an established life in both Ravnica and in their guild.
+            </AccordionItemText>
     },
     {
         title: 'Guild Info for Characters',
-        content: `Your character belongs to one of the ten guilds of Ravnica. Life among the guilds 
-        is very different; Azorius elocutors act as scribes for bustling senators; Golgari 
-        retrievers sift through waste in the Undercity, searching for objects of value; 
-        Boros soldiers train day in and day out to prepare for any threat that may emerge. 
-        Your character is unlikely to be at the top of their guild's leadership, but they 
-        don't have to be among the bottom rungs. Diversity in guild ranks among the party 
-        could lead to some interesting exploration; high ranking characters may be able to 
-        go where lower-ranking characters can't, and the inverse is true as well. 
-        If you're having trouble choosing a guild for your character, take their 
-        personality into account. The curious and expressive might join the Izzet League; 
-        the stoic and devoted might join the Orzhov Syndicate; the boisterous and 
-        hedonistic might join the Cult of Rakdos. If you're really having a hard time coming up 
-        with a character or choosing a guild, come to me and we can talk about it!`
+        content: 
+            <AccordionItemText>
+                Your character belongs to one of the ten guilds of Ravnica. Guild members don't just hang out, 
+                they've got jobs to do! When thinking about what guild you'd like your character to be a part 
+                of, also consider what their role within the guild is. <br/><br/>
+                Your character is unlikely to be at the top of their guild's leadership, but they 
+                don't have to be among the bottom rungs. Diversity in guild ranks among the party 
+                could lead to some interesting exploration; high ranking characters may be able to 
+                go where lower-ranking characters can't, and the inverse is true as well. <br/><br/>
+                If you're having trouble choosing a guild for your character, take their 
+                personality into account. The curious and expressive might join the Izzet League; 
+                the stoic and devoted might join the Orzhov Syndicate; the boisterous and 
+                hedonistic might join the Cult of Rakdos. <br/><br/>
+                If you're really having a hard time coming up with a character or choosing a guild, come to me 
+                and we can talk about it!
+            </AccordionItemText>
     },
     {
         title: 'Archetypes Intro',
-        content: <AccordionItemText>In this campaign, I'd like to use something I'm calling an Archetypes 
-        system. Basically, players will choose a primary 'role' and a secondary 'role', and then receive a set 
-        of benefits depending on what they've chosen.<br/><br/>The aim of this is to encourage cool moments of power that highlight the PC and the archetype they're trying to express. Remember, this is still early in its iterations. I'll try and update this as often as possible, and let me know of any feedback you have!
+        content: 
+            <AccordionItemText>
+                In this campaign, I'd like to use something I'm calling an Archetypes system. Basically, 
+                players will choose a primary 'role' and a secondary 'role', and then receive a set of benefits 
+                depending on what they've chosen.
+                <br/><br/>
+                The aim of this is to encourage cool moments of power that highlight the PC and the archetype 
+                they're trying to express. Remember, this is still early in its iterations. I'll try and update 
+                this as often as possible, and let me know of any feedback you have!
         </AccordionItemText>
     },
     {
@@ -111,14 +149,14 @@ const accordionData = [
                         <br/>
                             <ul>
                                 <li>
-                                    Grit: Once per short rest, when you 
-                                    take damage while within 5ft of a hostile creature, you may reduce the damage taken by an amount equal 
-                                    to your constitution modifier + your proficiency bonus.
+                                    Grit: Once per long rest, as a bonus action, you may cause your next melee 
+                                    weapon attack to deal an extra d8 of weapon damage. You gain an amount of 
+                                    temporary HP equal to the number rolled plus twice your proficiency bonus.
                                 </li>
                                 <br/>
                                 <li>
-                                    Fervor: During your first turn of 
-                                    initiative, your movement speed is increased by 5ft.
+                                    Fervor: Once per short rest, you may increase your movement speed by twice 
+                                    your proficiency bonus rounded up to the nearest multiple of 5.
                                 </li>
                             </ul>    
                             <br/>
@@ -126,11 +164,15 @@ const accordionData = [
                             <br/>
                             <ul>
                                 <li>
-                                    Steady Mind: You may add your proficiency bonus to rolls made to maintain concentration and rolls to resist fear and charm effects.
+                                    Steady Mind: You may add your proficiency bonus to rolls made to maintain 
+                                    concentration and rolls to resist fear and charm effects.
                                 </li>
                                 <br/>
                                 <li>
-                                    Always There: When a friendly creature you see within 30ft of you drops to 1/4 or less of their maximum HP, you may use your reaction to immediately move 10ft in their direction. You may do this a number of times per day equal to your proficiency bonus.
+                                    Always There: When a friendly creature you see within 30ft of you drops to 
+                                    1/4 or less of their maximum HP, you may use your reaction to immediately 
+                                    move 10ft in their direction. You may do this a number of times per day 
+                                    equal to your proficiency bonus.
                                 </li>
                             </ul>
                             <br/>
@@ -138,11 +180,15 @@ const accordionData = [
                             <br/>
                             <ul>
                                 <li>
-                                    Line Up: As a bonus action, consume half of your maximum movement speed. Add half of your proficiency bonus, rounded down, to the next ranged attack roll you make. You may do this a number of times per day equal to your proficiency bonus.
+                                    Line Up: As a bonus action, consume half of your maximum movement speed. 
+                                    Add 1d4 to the next ranged attack roll you make. You may do this a number 
+                                    of times per day equal to your proficiency bonus.
                                 </li>
                                 <br/>
                                 <li>
-                                    Keep Away: Once per day, if an enemy would end its turn within 5ft of you, you may use your reaction to immediately move up to 5ft away and make a ranged attack.
+                                    Keep Away: Once per day, if an enemy would end its turn within 5ft of you, 
+                                    you may use your reaction to immediately move up to 5ft away and make a 
+                                    ranged attack.
                                 </li>
                                 <br/>
                             </ul>
@@ -150,11 +196,17 @@ const accordionData = [
                             <br/>
                             <ul>
                                 <li>
-                                    Mystic Efficiency: Once per day, when an enemy succeeds on a saving throw for a spell of 3rd level or lower that you cast with a spell slot, if the difference between their roll and the spell save DC was less than or equal to your proficiency bonus, you may choose to regain the expended spell slot.
+                                    Mystic Efficiency: Once per day, when an enemy succeeds on a saving throw 
+                                    for a spell of 3rd level or lower that you cast with a spell slot, if the 
+                                    difference between their roll and the spell save DC was less than or equal 
+                                    to your proficiency bonus, you may choose to regain the expended spell 
+                                    slot. This only works on spells used on one creature.
                                 </li>
                                 <br/>
                                 <li>
-                                    Spell Slinger: Once per day, if you used your action to cast a spell of first level or higher, you may use your reaction to cast a cantrip as a bonus action.
+                                    Spell Slinger: Once per day, if you used your action to cast a spell of 
+                                    first level or higher, you may use your reaction to cast a cantrip as a 
+                                    bonus action.
                                 </li>
                             </ul>
                             <br/>
@@ -162,11 +214,16 @@ const accordionData = [
                             <br/>
                             <ul>
                                 <li>
-                                    Dice Per Second: When you roll damage for an attack, you may reroll one die. You may use either roll for the final result. You may do this a number of times per day equal to your proficiency bonus.
+                                    Dice Per Second: Once per short rest, when you roll damage for an attack, 
+                                    you may reroll a number of dice equal to your proficiency modifier.
                                 </li>  
                                 <br/>
                                 <li>
-                                    Press The Attack: Once per short rest, you may add your proficiency bonus to an attack roll made against an enemey if you attacked it on your previous turn.
+                                    Press The Attack: Once per long rest, as a bonus action, you gain the 
+                                    following effect: 'When you roll for damage dealt to an enemy, increase the 
+                                    damage by 1d4. If you've already rolled for damage against the same enemy 
+                                    this turn, increase the damage to 1d6 + your proficiency bonus.' This 
+                                    effect lasts for 1 minute.
                                 </li>
                             </ul>
                         </AccordionUnorderedList>
