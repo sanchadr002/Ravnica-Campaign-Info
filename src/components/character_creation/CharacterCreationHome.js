@@ -27,10 +27,22 @@ const Header = styled.h2({
     padding: '1em'
 })
 
+const AccordionItemText = styled.p({
+    fontSize: '1em',
+    color: 'honeydew',
+    padding: '1em'
+
+})
+
 const Container = styled.div({
     background: 'darkslategray',
     height: '90vh',
     display: 'flex-box'
+})
+
+const AccordionUnorderedList = styled.ul({
+    listStylePosition: 'inside',
+    padding: '1em'
 })
 
 const Paragraph = styled.p({
@@ -78,33 +90,87 @@ const accordionData = [
     },
     {
         title: 'Archetypes Intro',
-        content: `I've been really inspired with exploring and expressing different PC archetypes after playing lots of Elden Ring (haha). As such, I'd like to use this campaign to introduce an Archetypes system that I'll use in future campaigns. The aim of this is to help players who might have more niche archetypes that aren't as supported by official material (plus I love creating a problem to solve, what can I say?) `
+        content: <AccordionItemText>In this campaign, I'd like to use something I'm calling an Archetypes 
+        system. Basically, players will choose a primary 'role' and a secondary 'role', and then receive a set 
+        of benefits depending on what they've chosen.<br/><br/>The aim of this is to encourage cool moments of power that highlight the PC and the archetype they're trying to express. Remember, this is still early in its iterations. I'll try and update this as often as possible, and let me know of any feedback you have!
+        </AccordionItemText>
     },
     {
         title: 'Choosing your Archetype',
-        content: `In its current iteration, players will choose a Primary quality and a Secondary quality from 
-        the following: Strong, Quick, Hearty, Mindful. Characters will get buffs to theirs stats depending on 
-        their combination of qualities. At the end, characters will receive a mini-feat and a -1 point to their 
-        stats. When choosing your qualities, consider how your character approaches the 
-        challenges they face. Do they confront things head-on and with confidence? Maybe they're Strong/Hearty. 
-        Is your character more about thinking on the fly and using information? Consider Mindful/Quick. Primary: Strong: Add +2 points to your 
-        primary damage stat" Quick: Add +1 to your AC and +1 to your 
-        Dexterity. Hearty: Add +2 to your Constitution Mindful: Add +2 distributed as you choose among Intelligence and Wisdom Secondary: Strong: Add +1 point to your 
-        primary damage stat Quick: Add +1 to your AC Hearty: Add +1 point to your Constitution  
-         Mindful: Add +1 point to your Intelligence or Wisdom Archetype Ability: Choose an ability and negative stat point based on 
-        your Primary quality. Strong: Your power is capable of inspiring fear 
-        and awe in those who witness it: you may add your proficiency bonus to intimidation and persuasion 
-        checks made with displays of ability. Your focus on nurturing your power comes at a cost: subtract a 
-        point from one of your stats. Quick: Your talent for speed gets 
-        you to where you need to be: increase your movespeed by +5. Always walking with a spring in your step 
-        makes keeping steady a bit difficult: subtract one point from your Strength or Constitution. Hearty: Some might say that 'composure' is your middle name: you may add 
-        your proficiency bonus to rolls made to maintain concentration on a spell or ability, and to rolls made 
-        against fear and charm effects. . A substantial presence doesn't always guarantee ability: subtract 
-        one point from Strength, Dexterity, Intelligence, or Wisdom . Mindful: 
-        Your less direct approach to situations provides a distinct advantage: while in initiative, you may use 
-        a bonus action to consume all of your movement and observe an individual; you may add your proficiency 
-        bonus to the next check made against the observed target. All that time spent being aware is time not 
-        spent pumping iron: subtract one point from your Strength, Dexterity, or Constitution.`
+        content: 
+            <AccordionItemText>
+                Your archetype will have a Primary and Secondary role chosen from Melee, 
+                Support, Ranged, Caster, DPS. The roles you choose have to be different from each other. Your 
+                choice for Primary grants two bonuses, while your choice for secondary grants one of two 
+                bonuses.
+                <br/>   
+                <br/>
+                <h3>Primary</h3>
+                    <AccordionUnorderedList>
+                        <h4>Melee</h4>
+                        <br/>
+                            <ul>
+                                <li>
+                                    Grit: Once per short rest, when you 
+                                    take damage while within 5ft of a hostile creature, you may reduce the damage taken by an amount equal 
+                                    to your constitution modifier + your proficiency bonus.
+                                </li>
+                                <br/>
+                                <li>
+                                    Fervor: During your first turn of 
+                                    initiative, your movement speed is increased by 5ft.
+                                </li>
+                            </ul>    
+                            <br/>
+                            <h4>Support</h4>   
+                            <br/>
+                            <ul>
+                                <li>
+                                    Steady Mind: You may add your proficiency bonus to rolls made to maintain concentration and rolls to resist fear and charm effects.
+                                </li>
+                                <br/>
+                                <li>
+                                    Always There: When a friendly creature you see within 30ft of you drops to 1/4 or less of their maximum HP, you may use your reaction to immediately move 10ft in their direction. You may do this a number of times per day equal to your proficiency bonus.
+                                </li>
+                            </ul>
+                            <br/>
+                            <h4>Ranged</h4>
+                            <br/>
+                            <ul>
+                                <li>
+                                    Line Up: As a bonus action, consume half of your maximum movement speed. Add half of your proficiency bonus, rounded down, to the next ranged attack roll you make. You may do this a number of times per day equal to your proficiency bonus.
+                                </li>
+                                <br/>
+                                <li>
+                                    Keep Away: Once per day, if an enemy would end its turn within 5ft of you, you may use your reaction to immediately move up to 5ft away and make a ranged attack.
+                                </li>
+                                <br/>
+                            </ul>
+                            <h4>Caster</h4>
+                            <br/>
+                            <ul>
+                                <li>
+                                    Mystic Efficiency: Once per day, when an enemy succeeds on a saving throw for a spell of 3rd level or lower that you cast with a spell slot, if the difference between their roll and the spell save DC was less than or equal to your proficiency bonus, you may choose to regain the expended spell slot.
+                                </li>
+                                <br/>
+                                <li>
+                                    Spell Slinger: Once per day, if you used your action to cast a spell of first level or higher, you may use your reaction to cast a cantrip as a bonus action.
+                                </li>
+                            </ul>
+                            <br/>
+                            <h4>DPS</h4>
+                            <br/>
+                            <ul>
+                                <li>
+                                    Dice Per Second: When you roll damage for an attack, you may reroll one die. You may use either roll for the final result. You may do this a number of times per day equal to your proficiency bonus.
+                                </li>  
+                                <br/>
+                                <li>
+                                    Press The Attack: Once per short rest, you may add your proficiency bonus to an attack roll made against an enemey if you attacked it on your previous turn.
+                                </li>
+                            </ul>
+                        </AccordionUnorderedList>
+            </AccordionItemText>
     }
 ]
 const CharacterCreationHome = () => {
