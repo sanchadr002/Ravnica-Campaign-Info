@@ -63,8 +63,7 @@ const accordionData = [
                 <br/><br/>
                     <ul>
                         <li>
-                            some event in your character's past that's caused them to fight for balance among 
-                            the guilds (maybe your character saw their guild do something that changed how they 
+                            some event in your character's past that's caused them to join the Order (maybe your character saw their guild do something that changed how they 
                             saw the guild/guild system);
                         </li>
                         <br/>
@@ -83,12 +82,8 @@ const accordionData = [
                         <br/>
                         <li>
                             three contacts generated from your guild's background in the Ravnica sourcebook 
-                            (you can flesh these out more yourself or let me do it! and I figure they will be 
+                            (we can flesh these out together or you can let me do it! I figure they will be 
                             important for both mission purposes and non-Order-related exploration);
-                        </li>
-                        <br/>
-                        <li>
-                            one non-contact NPC that is important to your character in some way; 
                         </li>
                         <br/>
                         <li>
@@ -149,14 +144,15 @@ const accordionData = [
                         <br/>
                             <ul>
                                 <li>
-                                    Grit: Once per long rest, as a bonus action, you may cause your next melee 
+                                    Fervor: Once per short rest, as a bonus action, you may cause your next melee 
                                     weapon attack to deal an extra d8 of weapon damage. You gain an amount of 
                                     temporary HP equal to the number rolled plus twice your proficiency bonus.
                                 </li>
                                 <br/>
                                 <li>
-                                    Fervor: Once per short rest, you may increase your movement speed by twice 
-                                    your proficiency bonus rounded up to the nearest multiple of 5.
+                                    Grit: Once per long rest, when you take damage, you may use your reaction to 
+                                    increase your AC by an amount equal to your proficiency bonus for the next 
+                                    three hits you take.
                                 </li>
                             </ul>    
                             <br/>
@@ -164,14 +160,17 @@ const accordionData = [
                             <br/>
                             <ul>
                                 <li>
-                                    Steady Mind: You may add your proficiency bonus to rolls made to maintain 
-                                    concentration and rolls to resist fear and charm effects.
+                                    Steady Your Mind: Once per short rest, when you or a creature you can see 
+                                    within 30ft of you makes a roll to maintain concentration or to resist a fear 
+                                    or charm effect, you may use your reaction to grant a bonus to that roll equal 
+                                    to your proficiency bonus. Both you and the chosen creature gain temporary HP 
+                                    equal to that amount.
                                 </li>
                                 <br/>
                                 <li>
-                                    Always There: When a friendly creature you see within 30ft of you drops to 
-                                    1/4 or less of their maximum HP, you may use your reaction to immediately 
-                                    move 10ft in their direction. You may do this a number of times per day 
+                                    Always There: When a friendly creature you see within 30ft of you takes 
+                                    damage, you may use your reaction to immediately move up to 15ft in their 
+                                    direction. You may do this a number of times per day 
                                     equal to your proficiency bonus.
                                 </li>
                             </ul>
@@ -187,7 +186,7 @@ const accordionData = [
                                 <br/>
                                 <li>
                                     Keep Away: Once per day, if an enemy would end its turn within 5ft of you, 
-                                    you may use your reaction to immediately move up to 5ft away and make a 
+                                    you may use your reaction to immediately move up to 5ft away and make a single
                                     ranged attack.
                                 </li>
                                 <br/>
@@ -219,11 +218,9 @@ const accordionData = [
                                 </li>  
                                 <br/>
                                 <li>
-                                    Press The Attack: Once per long rest, as a bonus action, you gain the 
-                                    following effect: 'When you roll for damage dealt to an enemy, increase the 
-                                    damage by 1d4. If you've already rolled for damage against the same enemy 
-                                    this turn, increase the damage to 1d6 + your proficiency bonus.' This 
-                                    effect lasts for 1 minute.
+                                    Press The Attack: Once per long rest, when you roll damage, you may use your 
+                                    reaction to add a an additional number of that damage die equal to your 
+                                    proficiency bonus.
                                 </li>
                             </ul>
                         </AccordionUnorderedList>
